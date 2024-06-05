@@ -1,0 +1,53 @@
+@keyframes colorChanger {
+    from {background-color: lightgreen;}
+    to {background-color: darkgreen;}
+    
+}
+
+.friendList {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.friendList:hover {
+  transform: scale(103%);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.item:hover {
+    background-color: gray;
+}
+
+.status {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: red;
+    margin-inline: 12px;
+    
+}
+
+.isOnline {
+    
+    animation: colorChanger 700ms infinite alternate;
+}
+
+.name {
+    padding: 10px;
+    font-weight: 700;
+}
